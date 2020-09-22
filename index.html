@@ -40,403 +40,326 @@
 </body>
 <script>    
     
-            var map_63f472d2847e4dcf8baa4595c51d53be = L.map(
-                "map_63f472d2847e4dcf8baa4595c51d53be",
-                {
-                    center: [56.949533, 24.172519],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 10,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
+    var map_63f472d2847e4dcf8baa4595c51d53be = L.map(
+        "map_63f472d2847e4dcf8baa4595c51d53be",
+        {
+            center: [56.949533, 24.172519],
+            crs: L.CRS.EPSG3857,
+            zoom: 10,
+            zoomControl: true,
+            preferCanvas: false,
+        }
+    );
 
+    var tile_layer_2331ed2ec078424ab419b92e33c64da1 = L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+
+    var tile_layer_05b66a0849884acf8422164c63d50d20 = L.tileLayer(
+        "http://{s}.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
+        {"attribution": "google", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+    var tile_layer_94b465e87bbc4eb9ad94511cb4607401 = L.tileLayer(
+        "http://{s}.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+        {"attribution": "google", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+    var feature_group_6786fc2661a64c4a99902e3d192e4207 = L.featureGroup(
+        {"collapsed": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+    var marker_a9226334659846bfbb1448454260dca0 = L.marker(
+        [56.957570999999994, 24.014372],
+        {}
+    ).addTo(feature_group_6786fc2661a64c4a99902e3d192e4207);
+
+    var icon_d067e9c7a91a4a7bbc180ed071a5ab4d = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    marker_a9226334659846bfbb1448454260dca0.setIcon(icon_d067e9c7a91a4a7bbc180ed071a5ab4d);
+        
+    var popup_158b0c5dc4e748b18c6de9c6db83860d = L.popup({"maxWidth": "100%"});
+
+
+    var html_273830d7e6a4492d8781c4a0816e8e33 = $(`<div id="html_273830d7e6a4492d8781c4a0816e8e33" style="width: 100.0%; height: 100.0%;">Rīgas 3. bērnu un jaunatnes sporta skola  Maksas:yes  <a href= http://nan >nan</a></div>`)[0];
+    popup_158b0c5dc4e748b18c6de9c6db83860d.setContent(html_273830d7e6a4492d8781c4a0816e8e33);
+
+
+    marker_a9226334659846bfbb1448454260dca0.bindPopup(popup_158b0c5dc4e748b18c6de9c6db83860d);
+
+    var feature_group_423b2b569fd2446ea4d6647825369de5 = L.featureGroup(
+        {"collapsed": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+    var marker_8213a016f45e40979190526a48fb1057 = L.marker(
+        [56.952558700000004, 24.0102637],
+        {}
+    ).addTo(feature_group_423b2b569fd2446ea4d6647825369de5);
+
+    var icon_6bc690ff96244de29383f9956edc46c2 = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    marker_8213a016f45e40979190526a48fb1057.setIcon(icon_6bc690ff96244de29383f9956edc46c2);
+
+    var popup_8f91035e7876466d85f56e66950d34b9 = L.popup({"maxWidth": "100%"});
+
+    var html_04f024f9c8824a50a89f0a8a9197d513 = $(`<div id="html_04f024f9c8824a50a89f0a8a9197d513" style="width: 100.0%; height: 100.0%;">Volvo halle  Maksas:yes  <a href= http://www.volvoledus.lv >www.volvoledus.lv</a></div>`)[0];
+    popup_8f91035e7876466d85f56e66950d34b9.setContent(html_04f024f9c8824a50a89f0a8a9197d513);
+
+    marker_8213a016f45e40979190526a48fb1057.bindPopup(popup_8f91035e7876466d85f56e66950d34b9);
+
+    var feature_group_c7982dd6b5a14a238ec92bf5fae318fd = L.featureGroup(
+        {"collapsed": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+
+    var marker_9be7bd9eb05a45f8bb2bbeade774357f = L.marker(
+        [56.9566141, 24.0033519],
+        {}
+    ).addTo(feature_group_c7982dd6b5a14a238ec92bf5fae318fd);
+
+
+    var icon_e470669480af4d63a0a09976b3bf25bd = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    marker_9be7bd9eb05a45f8bb2bbeade774357f.setIcon(icon_e470669480af4d63a0a09976b3bf25bd);
+        
+    
+    var popup_f5ec2e8942a847238fe720a170d95ee9 = L.popup({"maxWidth": "100%"});
+
+        
+    var html_154aff80d0c646f8995b75e488bc88ca = $(`<div id="html_154aff80d0c646f8995b75e488bc88ca" style="width: 100.0%; height: 100.0%;">Imantas sporta centrs  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
+    popup_f5ec2e8942a847238fe720a170d95ee9.setContent(html_154aff80d0c646f8995b75e488bc88ca);
+        
+
+    marker_9be7bd9eb05a45f8bb2bbeade774357f.bindPopup(popup_f5ec2e8942a847238fe720a170d95ee9);
+    
+    var feature_group_46ca02e4ec3a45628f4f13b961e97814 = L.featureGroup(
+        {"collapsed": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+    var marker_ac20f44492f242b69818266ae4f44bc7 = L.marker(
+        [56.9566141, 24.0033519],
+        {}
+    ).addTo(feature_group_46ca02e4ec3a45628f4f13b961e97814);
+
+    var icon_a4498371c0644bf9aa2b038877a7aa1f = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    
+    marker_ac20f44492f242b69818266ae4f44bc7.setIcon(icon_a4498371c0644bf9aa2b038877a7aa1f);
+
+    var popup_3fb2887f81194a15a998c45639c63760 = L.popup({"maxWidth": "100%"});
+
+    var html_a8103c726e9c48138d88e51cd7cf4537 = $(`<div id="html_a8103c726e9c48138d88e51cd7cf4537" style="width: 100.0%; height: 100.0%;">Imantas sporta centrs  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
+    
+    popup_3fb2887f81194a15a998c45639c63760.setContent(html_a8103c726e9c48138d88e51cd7cf4537);
+        
+    marker_ac20f44492f242b69818266ae4f44bc7.bindPopup(popup_3fb2887f81194a15a998c45639c63760);
+    
+    var marker_96741328ed584a49b71104bfd800ccfc = L.marker(
+        [56.95215820000001, 24.002751999999997],
+        {}
+    ).addTo(feature_group_46ca02e4ec3a45628f4f13b961e97814);
+
+    var icon_9861c0d1068f442eb19589276fad321d = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    
+    marker_96741328ed584a49b71104bfd800ccfc.setIcon(icon_9861c0d1068f442eb19589276fad321d);
+        
+    var popup_5531bdd63e814a6393a003c69c08d3a0 = L.popup({"maxWidth": "100%"});
+
+    var html_ca471a37f8f14fb8a29a09906c6ff37f = $(`<div id="html_ca471a37f8f14fb8a29a09906c6ff37f" style="width: 100.0%; height: 100.0%;">Piknikparks  Maksas:nan  <a href= http://www.piknikparks.lv >www.piknikparks.lv</a></div>`)[0];
+    
+    popup_5531bdd63e814a6393a003c69c08d3a0.setContent(html_ca471a37f8f14fb8a29a09906c6ff37f);
+        
+    marker_96741328ed584a49b71104bfd800ccfc.bindPopup(popup_5531bdd63e814a6393a003c69c08d3a0);
+
+    var marker_8a176b3af54f4988877eca690310d29e = L.marker(
+        [56.9568534, 24.0111064],
+        {}
+    ).addTo(feature_group_46ca02e4ec3a45628f4f13b961e97814);
+
+    var icon_597b0e9d183e4cafa9b0eee6af83d255 = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+
+    marker_8a176b3af54f4988877eca690310d29e.setIcon(icon_597b0e9d183e4cafa9b0eee6af83d255);
+        
+    var popup_1c5e328dac014bc78bfdbd4a40c928de = L.popup({"maxWidth": "100%"});
+        
+    var html_a0a92e44f6ef4a5fb8ef0e3941408507 = $(`<div id="html_a0a92e44f6ef4a5fb8ef0e3941408507" style="width: 100.0%; height: 100.0%;">Rotaļu laukums Anniņmuišas parkā  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
+    popup_1c5e328dac014bc78bfdbd4a40c928de.setContent(html_a0a92e44f6ef4a5fb8ef0e3941408507);
+        
+    marker_8a176b3af54f4988877eca690310d29e.bindPopup(popup_1c5e328dac014bc78bfdbd4a40c928de);
+
+    var feature_group_bf2d25292b964a12b1aff200499b1bf4 = L.featureGroup(
+        {"collapsed": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+
+    var marker_aafb05a3209941198100daab659da4bf = L.marker(
+        [56.952558700000004, 24.0102637],
+        {}
+    ).addTo(feature_group_bf2d25292b964a12b1aff200499b1bf4);
+
+
+    var icon_5bc5e86ceaa147f0b6d68d870e7cca3e = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    marker_aafb05a3209941198100daab659da4bf.setIcon(icon_5bc5e86ceaa147f0b6d68d870e7cca3e);
+    var popup_a228e88f0e4645acb9cce4afeb459aab = L.popup({"maxWidth": "100%"});
+
+    var html_e09221ca6a344f76a7c69438e84e064a = $(`<div id="html_e09221ca6a344f76a7c69438e84e064a" style="width: 100.0%; height: 100.0%;">Volvo halle  Maksas:yes  <a href= http://www.volvoledus.lv >www.volvoledus.lv</a></div>`)[0];
+    popup_a228e88f0e4645acb9cce4afeb459aab.setContent(html_e09221ca6a344f76a7c69438e84e064a);
+        
+
+    marker_aafb05a3209941198100daab659da4bf.bindPopup(popup_a228e88f0e4645acb9cce4afeb459aab);
+
+    var feature_group_32181c23d8b846c0be4397f09da5515d = L.featureGroup(
+        {"collapsed": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+
+    var marker_71781d3767264789805a9111063d69af = L.marker(
+        [56.9566141, 24.0033519],
+        {}
+    ).addTo(feature_group_32181c23d8b846c0be4397f09da5515d);
+
+
+    var icon_00ad0e495d5a43ba88a8da14a48179ff = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    
+    marker_71781d3767264789805a9111063d69af.setIcon(icon_00ad0e495d5a43ba88a8da14a48179ff);
+        
+    
+    var popup_915b181a781043dd880b070468739fe5 = L.popup({"maxWidth": "100%"});
+
+    var html_6e950e94b94f4465b26924ab15071381 = $(`<div id="html_6e950e94b94f4465b26924ab15071381" style="width: 100.0%; height: 100.0%;">Imantas sporta centrs  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
+    
+    popup_915b181a781043dd880b070468739fe5.setContent(html_6e950e94b94f4465b26924ab15071381);
+
+    marker_71781d3767264789805a9111063d69af.bindPopup(popup_915b181a781043dd880b070468739fe5);
+    
+    var marker_04181111fba84b43a9bb5c2d57321330 = L.marker(
+        [56.957570999999994, 24.014372],
+        {}
+    ).addTo(feature_group_32181c23d8b846c0be4397f09da5515d);
+
+
+    var icon_082001bba4b249db85983bd7216a2a36 = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    marker_04181111fba84b43a9bb5c2d57321330.setIcon(icon_082001bba4b249db85983bd7216a2a36);
+        
+    var popup_cbd4df8907fb46358759b21610297b55 = L.popup({"maxWidth": "100%"});
+    
+    var html_fdc6768239fd4c2ea4b1a20c1419437e = $(`<div id="html_fdc6768239fd4c2ea4b1a20c1419437e" style="width: 100.0%; height: 100.0%;">Rīgas 3. bērnu un jaunatnes sporta skola  Maksas:yes  <a href= http://nan >nan</a></div>`)[0];
+    
+    popup_cbd4df8907fb46358759b21610297b55.setContent(html_fdc6768239fd4c2ea4b1a20c1419437e);
+
+    marker_04181111fba84b43a9bb5c2d57321330.bindPopup(popup_cbd4df8907fb46358759b21610297b55);
+    
+    var marker_e2efe0d332dc4a79bee9f8986697498f = L.marker(
+        [56.9547149, 24.0039372],
+        {}
+    ).addTo(feature_group_32181c23d8b846c0be4397f09da5515d);
+
+    var icon_4d83e1a329014ae7921bd5911afb3792 = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    marker_e2efe0d332dc4a79bee9f8986697498f.setIcon(icon_4d83e1a329014ae7921bd5911afb3792);
             
+    var popup_d8de7dbfeaf649ef8ddae3ba3a87f97a = L.popup({"maxWidth": "100%"});
+    
+    var html_6ab9f89fa7f5489486af339838fbf2f0 = $(`<div id="html_6ab9f89fa7f5489486af339838fbf2f0" style="width: 100.0%; height: 100.0%;">Basketbola laukums  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
+    
+    popup_d8de7dbfeaf649ef8ddae3ba3a87f97a.setContent(html_6ab9f89fa7f5489486af339838fbf2f0);
+        
+    marker_e2efe0d332dc4a79bee9f8986697498f.bindPopup(popup_d8de7dbfeaf649ef8ddae3ba3a87f97a);
+
+    var feature_group_611a7396303b4aa5a2c06719704144b0 = L.featureGroup(
+        {"collapsed": false}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+
+
+    var marker_e9f24f0d05bb4c1e92461d728f1d5cf7 = L.marker(
+        [56.96499920000001, 24.021491],
+        {}
+    ).addTo(feature_group_611a7396303b4aa5a2c06719704144b0);
+
+
+    var icon_2effd2c51d8c442faf333d72f3bdd133 = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    
+    marker_e9f24f0d05bb4c1e92461d728f1d5cf7.setIcon(icon_2effd2c51d8c442faf333d72f3bdd133);
+        
+    
+    var popup_3395c9be075f48eaa4bf05c36f615137 = L.popup({"maxWidth": "100%"});
 
         
-    
-            var tile_layer_2331ed2ec078424ab419b92e33c64da1 = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var tile_layer_05b66a0849884acf8422164c63d50d20 = L.tileLayer(
-                "http://{s}.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
-                {"attribution": "google", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var tile_layer_94b465e87bbc4eb9ad94511cb4607401 = L.tileLayer(
-                "http://{s}.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
-                {"attribution": "google", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": ["mt0", "mt1", "mt2", "mt3"], "tms": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var feature_group_6786fc2661a64c4a99902e3d192e4207 = L.featureGroup(
-                {"collapsed": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var marker_a9226334659846bfbb1448454260dca0 = L.marker(
-                [56.957570999999994, 24.014372],
-                {}
-            ).addTo(feature_group_6786fc2661a64c4a99902e3d192e4207);
-        
-    
-            var icon_d067e9c7a91a4a7bbc180ed071a5ab4d = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_a9226334659846bfbb1448454260dca0.setIcon(icon_d067e9c7a91a4a7bbc180ed071a5ab4d);
-        
-    
-        var popup_158b0c5dc4e748b18c6de9c6db83860d = L.popup({"maxWidth": "100%"});
-
-        
-            var html_273830d7e6a4492d8781c4a0816e8e33 = $(`<div id="html_273830d7e6a4492d8781c4a0816e8e33" style="width: 100.0%; height: 100.0%;">Rīgas 3. bērnu un jaunatnes sporta skola  Maksas:yes  <a href= http://nan >nan</a></div>`)[0];
-            popup_158b0c5dc4e748b18c6de9c6db83860d.setContent(html_273830d7e6a4492d8781c4a0816e8e33);
+    var html_8f57becb1f204f3ab848d1cc68288426 = $(`<div id="html_8f57becb1f204f3ab848d1cc68288426" style="width: 100.0%; height: 100.0%;">Lemon Gym Imanta  Maksas:yes  <a href= http://nan >nan</a></div>`)[0];
+    popup_3395c9be075f48eaa4bf05c36f615137.setContent(html_8f57becb1f204f3ab848d1cc68288426);
         
 
-        marker_a9226334659846bfbb1448454260dca0.bindPopup(popup_158b0c5dc4e748b18c6de9c6db83860d)
-        ;
+    marker_e9f24f0d05bb4c1e92461d728f1d5cf7.bindPopup(popup_3395c9be075f48eaa4bf05c36f615137);
 
-        
-    
-    
-            var feature_group_423b2b569fd2446ea4d6647825369de5 = L.featureGroup(
-                {"collapsed": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var marker_8213a016f45e40979190526a48fb1057 = L.marker(
-                [56.952558700000004, 24.0102637],
-                {}
-            ).addTo(feature_group_423b2b569fd2446ea4d6647825369de5);
-        
-    
-            var icon_6bc690ff96244de29383f9956edc46c2 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_8213a016f45e40979190526a48fb1057.setIcon(icon_6bc690ff96244de29383f9956edc46c2);
-        
-    
-        var popup_8f91035e7876466d85f56e66950d34b9 = L.popup({"maxWidth": "100%"});
+    var marker_8f686fc28fbb4cdbac174ad099d788e4 = L.marker(
+        [56.954095200000005, 24.028250500000002],
+        {}
+    ).addTo(feature_group_611a7396303b4aa5a2c06719704144b0);
 
-        
-            var html_04f024f9c8824a50a89f0a8a9197d513 = $(`<div id="html_04f024f9c8824a50a89f0a8a9197d513" style="width: 100.0%; height: 100.0%;">Volvo halle  Maksas:yes  <a href= http://www.volvoledus.lv >www.volvoledus.lv</a></div>`)[0];
-            popup_8f91035e7876466d85f56e66950d34b9.setContent(html_04f024f9c8824a50a89f0a8a9197d513);
-        
 
-        marker_8213a016f45e40979190526a48fb1057.bindPopup(popup_8f91035e7876466d85f56e66950d34b9)
-        ;
+    var icon_17809aad247045eb9ab368313f74986b = L.AwesomeMarkers.icon(
+        {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+    );
+    
+    marker_8f686fc28fbb4cdbac174ad099d788e4.setIcon(icon_17809aad247045eb9ab368313f74986b);
+        
+    var popup_d945ebe959bb4077949704fb8c97f6ba = L.popup({"maxWidth": "100%"});
 
-        
+    var html_4744553adc9149d9b57c8ca400e28498 = $(`<div id="html_4744553adc9149d9b57c8ca400e28498" style="width: 100.0%; height: 100.0%;">People Fitness Imanta  Maksas:yes  <a href= http://nan >nan</a></div>`)[0];
     
-    
-            var feature_group_c7982dd6b5a14a238ec92bf5fae318fd = L.featureGroup(
-                {"collapsed": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var marker_9be7bd9eb05a45f8bb2bbeade774357f = L.marker(
-                [56.9566141, 24.0033519],
-                {}
-            ).addTo(feature_group_c7982dd6b5a14a238ec92bf5fae318fd);
-        
-    
-            var icon_e470669480af4d63a0a09976b3bf25bd = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_9be7bd9eb05a45f8bb2bbeade774357f.setIcon(icon_e470669480af4d63a0a09976b3bf25bd);
-        
-    
-        var popup_f5ec2e8942a847238fe720a170d95ee9 = L.popup({"maxWidth": "100%"});
+    popup_d945ebe959bb4077949704fb8c97f6ba.setContent(html_4744553adc9149d9b57c8ca400e28498);
 
-        
-            var html_154aff80d0c646f8995b75e488bc88ca = $(`<div id="html_154aff80d0c646f8995b75e488bc88ca" style="width: 100.0%; height: 100.0%;">Imantas sporta centrs  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
-            popup_f5ec2e8942a847238fe720a170d95ee9.setContent(html_154aff80d0c646f8995b75e488bc88ca);
-        
-
-        marker_9be7bd9eb05a45f8bb2bbeade774357f.bindPopup(popup_f5ec2e8942a847238fe720a170d95ee9)
-        ;
-
-        
+    marker_8f686fc28fbb4cdbac174ad099d788e4.bindPopup(popup_d945ebe959bb4077949704fb8c97f6ba);
     
+    var layer_control_34e26c60f40c4d66807b3b36122f47b2 = {
+        base_layers : {
+            "openstreetmap" : tile_layer_2331ed2ec078424ab419b92e33c64da1,
+            "Google street view" : tile_layer_05b66a0849884acf8422164c63d50d20,
+            "google Areal" : tile_layer_94b465e87bbc4eb9ad94511cb4607401,
+        },
+        overlays :  {
+            "Tenis" : feature_group_6786fc2661a64c4a99902e3d192e4207,
+            "Hokejs" : feature_group_423b2b569fd2446ea4d6647825369de5,
+            "Futbols" : feature_group_c7982dd6b5a14a238ec92bf5fae318fd,
+            "Rota\u013cu laukums" : feature_group_46ca02e4ec3a45628f4f13b961e97814,
+            "Sporta invent\u0101rs" : feature_group_bf2d25292b964a12b1aff200499b1bf4,
+            "Basketbols" : feature_group_32181c23d8b846c0be4397f09da5515d,
+            "Trena\u017eieru z\u0101le" : feature_group_611a7396303b4aa5a2c06719704144b0,
+        },
+    };
     
-            var feature_group_46ca02e4ec3a45628f4f13b961e97814 = L.featureGroup(
-                {"collapsed": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var marker_ac20f44492f242b69818266ae4f44bc7 = L.marker(
-                [56.9566141, 24.0033519],
-                {}
-            ).addTo(feature_group_46ca02e4ec3a45628f4f13b961e97814);
-        
-    
-            var icon_a4498371c0644bf9aa2b038877a7aa1f = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_ac20f44492f242b69818266ae4f44bc7.setIcon(icon_a4498371c0644bf9aa2b038877a7aa1f);
-        
-    
-        var popup_3fb2887f81194a15a998c45639c63760 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_a8103c726e9c48138d88e51cd7cf4537 = $(`<div id="html_a8103c726e9c48138d88e51cd7cf4537" style="width: 100.0%; height: 100.0%;">Imantas sporta centrs  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
-            popup_3fb2887f81194a15a998c45639c63760.setContent(html_a8103c726e9c48138d88e51cd7cf4537);
-        
-
-        marker_ac20f44492f242b69818266ae4f44bc7.bindPopup(popup_3fb2887f81194a15a998c45639c63760)
-        ;
-
-        
-    
-    
-            var marker_96741328ed584a49b71104bfd800ccfc = L.marker(
-                [56.95215820000001, 24.002751999999997],
-                {}
-            ).addTo(feature_group_46ca02e4ec3a45628f4f13b961e97814);
-        
-    
-            var icon_9861c0d1068f442eb19589276fad321d = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_96741328ed584a49b71104bfd800ccfc.setIcon(icon_9861c0d1068f442eb19589276fad321d);
-        
-    
-        var popup_5531bdd63e814a6393a003c69c08d3a0 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_ca471a37f8f14fb8a29a09906c6ff37f = $(`<div id="html_ca471a37f8f14fb8a29a09906c6ff37f" style="width: 100.0%; height: 100.0%;">Piknikparks  Maksas:nan  <a href= http://www.piknikparks.lv >www.piknikparks.lv</a></div>`)[0];
-            popup_5531bdd63e814a6393a003c69c08d3a0.setContent(html_ca471a37f8f14fb8a29a09906c6ff37f);
-        
-
-        marker_96741328ed584a49b71104bfd800ccfc.bindPopup(popup_5531bdd63e814a6393a003c69c08d3a0)
-        ;
-
-        
-    
-    
-            var marker_8a176b3af54f4988877eca690310d29e = L.marker(
-                [56.9568534, 24.0111064],
-                {}
-            ).addTo(feature_group_46ca02e4ec3a45628f4f13b961e97814);
-        
-    
-            var icon_597b0e9d183e4cafa9b0eee6af83d255 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_8a176b3af54f4988877eca690310d29e.setIcon(icon_597b0e9d183e4cafa9b0eee6af83d255);
-        
-    
-        var popup_1c5e328dac014bc78bfdbd4a40c928de = L.popup({"maxWidth": "100%"});
-
-        
-            var html_a0a92e44f6ef4a5fb8ef0e3941408507 = $(`<div id="html_a0a92e44f6ef4a5fb8ef0e3941408507" style="width: 100.0%; height: 100.0%;">Rotaļu laukums Anniņmuišas parkā  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
-            popup_1c5e328dac014bc78bfdbd4a40c928de.setContent(html_a0a92e44f6ef4a5fb8ef0e3941408507);
-        
-
-        marker_8a176b3af54f4988877eca690310d29e.bindPopup(popup_1c5e328dac014bc78bfdbd4a40c928de)
-        ;
-
-        
-    
-    
-            var feature_group_bf2d25292b964a12b1aff200499b1bf4 = L.featureGroup(
-                {"collapsed": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var marker_aafb05a3209941198100daab659da4bf = L.marker(
-                [56.952558700000004, 24.0102637],
-                {}
-            ).addTo(feature_group_bf2d25292b964a12b1aff200499b1bf4);
-        
-    
-            var icon_5bc5e86ceaa147f0b6d68d870e7cca3e = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_aafb05a3209941198100daab659da4bf.setIcon(icon_5bc5e86ceaa147f0b6d68d870e7cca3e);
-        
-    
-        var popup_a228e88f0e4645acb9cce4afeb459aab = L.popup({"maxWidth": "100%"});
-
-        
-            var html_e09221ca6a344f76a7c69438e84e064a = $(`<div id="html_e09221ca6a344f76a7c69438e84e064a" style="width: 100.0%; height: 100.0%;">Volvo halle  Maksas:yes  <a href= http://www.volvoledus.lv >www.volvoledus.lv</a></div>`)[0];
-            popup_a228e88f0e4645acb9cce4afeb459aab.setContent(html_e09221ca6a344f76a7c69438e84e064a);
-        
-
-        marker_aafb05a3209941198100daab659da4bf.bindPopup(popup_a228e88f0e4645acb9cce4afeb459aab)
-        ;
-
-        
-    
-    
-            var feature_group_32181c23d8b846c0be4397f09da5515d = L.featureGroup(
-                {"collapsed": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var marker_71781d3767264789805a9111063d69af = L.marker(
-                [56.9566141, 24.0033519],
-                {}
-            ).addTo(feature_group_32181c23d8b846c0be4397f09da5515d);
-        
-    
-            var icon_00ad0e495d5a43ba88a8da14a48179ff = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_71781d3767264789805a9111063d69af.setIcon(icon_00ad0e495d5a43ba88a8da14a48179ff);
-        
-    
-        var popup_915b181a781043dd880b070468739fe5 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_6e950e94b94f4465b26924ab15071381 = $(`<div id="html_6e950e94b94f4465b26924ab15071381" style="width: 100.0%; height: 100.0%;">Imantas sporta centrs  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
-            popup_915b181a781043dd880b070468739fe5.setContent(html_6e950e94b94f4465b26924ab15071381);
-        
-
-        marker_71781d3767264789805a9111063d69af.bindPopup(popup_915b181a781043dd880b070468739fe5)
-        ;
-
-        
-    
-    
-            var marker_04181111fba84b43a9bb5c2d57321330 = L.marker(
-                [56.957570999999994, 24.014372],
-                {}
-            ).addTo(feature_group_32181c23d8b846c0be4397f09da5515d);
-        
-    
-            var icon_082001bba4b249db85983bd7216a2a36 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_04181111fba84b43a9bb5c2d57321330.setIcon(icon_082001bba4b249db85983bd7216a2a36);
-        
-    
-        var popup_cbd4df8907fb46358759b21610297b55 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_fdc6768239fd4c2ea4b1a20c1419437e = $(`<div id="html_fdc6768239fd4c2ea4b1a20c1419437e" style="width: 100.0%; height: 100.0%;">Rīgas 3. bērnu un jaunatnes sporta skola  Maksas:yes  <a href= http://nan >nan</a></div>`)[0];
-            popup_cbd4df8907fb46358759b21610297b55.setContent(html_fdc6768239fd4c2ea4b1a20c1419437e);
-        
-
-        marker_04181111fba84b43a9bb5c2d57321330.bindPopup(popup_cbd4df8907fb46358759b21610297b55)
-        ;
-
-        
-    
-    
-            var marker_e2efe0d332dc4a79bee9f8986697498f = L.marker(
-                [56.9547149, 24.0039372],
-                {}
-            ).addTo(feature_group_32181c23d8b846c0be4397f09da5515d);
-        
-    
-            var icon_4d83e1a329014ae7921bd5911afb3792 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_e2efe0d332dc4a79bee9f8986697498f.setIcon(icon_4d83e1a329014ae7921bd5911afb3792);
-        
-    
-        var popup_d8de7dbfeaf649ef8ddae3ba3a87f97a = L.popup({"maxWidth": "100%"});
-
-        
-            var html_6ab9f89fa7f5489486af339838fbf2f0 = $(`<div id="html_6ab9f89fa7f5489486af339838fbf2f0" style="width: 100.0%; height: 100.0%;">Basketbola laukums  Maksas:no  <a href= http://nan >nan</a></div>`)[0];
-            popup_d8de7dbfeaf649ef8ddae3ba3a87f97a.setContent(html_6ab9f89fa7f5489486af339838fbf2f0);
-        
-
-        marker_e2efe0d332dc4a79bee9f8986697498f.bindPopup(popup_d8de7dbfeaf649ef8ddae3ba3a87f97a)
-        ;
-
-        
-    
-    
-            var feature_group_611a7396303b4aa5a2c06719704144b0 = L.featureGroup(
-                {"collapsed": false}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-        
-    
-            var marker_e9f24f0d05bb4c1e92461d728f1d5cf7 = L.marker(
-                [56.96499920000001, 24.021491],
-                {}
-            ).addTo(feature_group_611a7396303b4aa5a2c06719704144b0);
-        
-    
-            var icon_2effd2c51d8c442faf333d72f3bdd133 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_e9f24f0d05bb4c1e92461d728f1d5cf7.setIcon(icon_2effd2c51d8c442faf333d72f3bdd133);
-        
-    
-        var popup_3395c9be075f48eaa4bf05c36f615137 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_8f57becb1f204f3ab848d1cc68288426 = $(`<div id="html_8f57becb1f204f3ab848d1cc68288426" style="width: 100.0%; height: 100.0%;">Lemon Gym Imanta  Maksas:yes  <a href= http://nan >nan</a></div>`)[0];
-            popup_3395c9be075f48eaa4bf05c36f615137.setContent(html_8f57becb1f204f3ab848d1cc68288426);
-        
-
-        marker_e9f24f0d05bb4c1e92461d728f1d5cf7.bindPopup(popup_3395c9be075f48eaa4bf05c36f615137)
-        ;
-
-        
-    
-    
-            var marker_8f686fc28fbb4cdbac174ad099d788e4 = L.marker(
-                [56.954095200000005, 24.028250500000002],
-                {}
-            ).addTo(feature_group_611a7396303b4aa5a2c06719704144b0);
-        
-    
-            var icon_17809aad247045eb9ab368313f74986b = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
-            );
-            marker_8f686fc28fbb4cdbac174ad099d788e4.setIcon(icon_17809aad247045eb9ab368313f74986b);
-        
-    
-        var popup_d945ebe959bb4077949704fb8c97f6ba = L.popup({"maxWidth": "100%"});
-
-        
-            var html_4744553adc9149d9b57c8ca400e28498 = $(`<div id="html_4744553adc9149d9b57c8ca400e28498" style="width: 100.0%; height: 100.0%;">People Fitness Imanta  Maksas:yes  <a href= http://nan >nan</a></div>`)[0];
-            popup_d945ebe959bb4077949704fb8c97f6ba.setContent(html_4744553adc9149d9b57c8ca400e28498);
-        
-
-        marker_8f686fc28fbb4cdbac174ad099d788e4.bindPopup(popup_d945ebe959bb4077949704fb8c97f6ba)
-        ;
-
-        
-    
-    
-            var layer_control_34e26c60f40c4d66807b3b36122f47b2 = {
-                base_layers : {
-                    "openstreetmap" : tile_layer_2331ed2ec078424ab419b92e33c64da1,
-                    "Google street view" : tile_layer_05b66a0849884acf8422164c63d50d20,
-                    "google Areal" : tile_layer_94b465e87bbc4eb9ad94511cb4607401,
-                },
-                overlays :  {
-                    "Tenis" : feature_group_6786fc2661a64c4a99902e3d192e4207,
-                    "Hokejs" : feature_group_423b2b569fd2446ea4d6647825369de5,
-                    "Futbols" : feature_group_c7982dd6b5a14a238ec92bf5fae318fd,
-                    "Rota\u013cu laukums" : feature_group_46ca02e4ec3a45628f4f13b961e97814,
-                    "Sporta invent\u0101rs" : feature_group_bf2d25292b964a12b1aff200499b1bf4,
-                    "Basketbols" : feature_group_32181c23d8b846c0be4397f09da5515d,
-                    "Trena\u017eieru z\u0101le" : feature_group_611a7396303b4aa5a2c06719704144b0,
-                },
-            };
-            L.control.layers(
-                layer_control_34e26c60f40c4d66807b3b36122f47b2.base_layers,
-                layer_control_34e26c60f40c4d66807b3b36122f47b2.overlays,
-                {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
-            tile_layer_05b66a0849884acf8422164c63d50d20.remove();
-            tile_layer_94b465e87bbc4eb9ad94511cb4607401.remove();
-            feature_group_6786fc2661a64c4a99902e3d192e4207.remove();
-            feature_group_423b2b569fd2446ea4d6647825369de5.remove();
-            feature_group_c7982dd6b5a14a238ec92bf5fae318fd.remove();
-            feature_group_46ca02e4ec3a45628f4f13b961e97814.remove();
-            feature_group_bf2d25292b964a12b1aff200499b1bf4.remove();
-            feature_group_32181c23d8b846c0be4397f09da5515d.remove();
-            feature_group_611a7396303b4aa5a2c06719704144b0.remove();
+    L.control.layers(
+        layer_control_34e26c60f40c4d66807b3b36122f47b2.base_layers,
+        layer_control_34e26c60f40c4d66807b3b36122f47b2.overlays,
+        {"autoZIndex": true, "collapsed": true, "position": "topright"}
+    ).addTo(map_63f472d2847e4dcf8baa4595c51d53be);
+    tile_layer_05b66a0849884acf8422164c63d50d20.remove();
+    tile_layer_94b465e87bbc4eb9ad94511cb4607401.remove();
+    feature_group_6786fc2661a64c4a99902e3d192e4207.remove();
+    feature_group_423b2b569fd2446ea4d6647825369de5.remove();
+    feature_group_c7982dd6b5a14a238ec92bf5fae318fd.remove();
+    feature_group_46ca02e4ec3a45628f4f13b961e97814.remove();
+    feature_group_bf2d25292b964a12b1aff200499b1bf4.remove();
+    feature_group_32181c23d8b846c0be4397f09da5515d.remove();
+    feature_group_611a7396303b4aa5a2c06719704144b0.remove();
         
 </script>
